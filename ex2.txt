@@ -1,0 +1,22 @@
+int f(double a, int v)
+{
+    int _a_2_3 = 20; //_a_2_var //
+    int a____ = 30; /* a_____
+		       var */
+    int _2___ = 40; // _2___ var */
+    int _____3 = 50; ///* ____3 var
+    int ___2__  = 60;
+    int _ = 10;
+    int ___ = 15;
+    "abc"";
+    "abcd""";
+    double a = 32.23E+2;
+    double wqe = -0.23e+2;
+    int abcdefghijklmnopqrstuvwxyz = 12312312312;
+    if(a==2)
+    {
+	a=3;
+    }
+
+    int a&^# = 23;
+}
