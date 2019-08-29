@@ -19,7 +19,7 @@ gcc lex.yy.c -lf -lfl
 ```
 
 
-## 기능 설명
+#### 기능 설명
 ### TOKEN 종류
   
 1.Keywords
@@ -52,11 +52,11 @@ gcc lex.yy.c -lf -lfl
   
 6.Operators
 
-- +  -  *  /  
+- '+' '-'  '*'  '/'
 
-- =
+- '='
 
-- > >= < <= == !=
+- '>' '>=' '<' '<=' '==' '!='
  
 7.기타 특수 문자들
 
@@ -82,41 +82,39 @@ int f ( int a, double b)
    
 }
 
-int sum ; sum print ( ;  
+int sum ; sum print ( ;   **실제 문장구조는 체크하지 않으므로 실제 문법과 달라도 상관없음**
 
-**실제 문장구조는 체크하지 않으므로 실제 문법과 달라도 상관없음**
-
-## 출력예시
+### 출력예시
 
 - 1. 토큰들의 리스트 (token 옆에 lexeme을 함께 출력할 것)
 
-	TOKEN		    LEXEME
+	TOKEN               LEXEME
 	
-	<INT, >		  	int
+	<INT, >             int
 	
-	<ID, 1>		  	f
+	<ID, 1>             f
 	
-   <LPAREN, >		(
+   <LPAREN, >		    (
    
-	<INT, >		  	int
+	<INT, >		  	    int
 	
-	<ID, 2>		  	a
+	<ID, 2>		  	    a
 	
-	<COMMA, >	 	,
+	<COMMA, >	 	    ,
 	
     ...
       
-	<PRINT, >		print
+	<PRINT, >		    print
 	
-    <LPAREN, >		(
+    <LPAREN, >		    (
     
-	<ID, 2>		  	a
+	<ID, 2>		  	    a
 	
-	<COMMA, >	 	,
+	<COMMA, >	 	    ,
 	
-	<ID, 3>		  	b
+	<ID, 3>		  	    b
 	
-	<COMMA, >	 	,
+	<COMMA, >	 	    ,
 	
     ...
     
