@@ -13,7 +13,7 @@
 
 ```bash
 flex hw1.l
-gcc lex.yy.c -lf -lfl
+gcc lex.yy.c -ly -lfl
 ./a.out ex1.txt
 ./a.out ex2.txt
 ```
