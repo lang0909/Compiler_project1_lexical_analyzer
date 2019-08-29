@@ -87,6 +87,9 @@ int sum ; sum print ( ;   **실제 문장구조는 체크하지 않으므로 실
 ### 출력예시
 
 - 1. 토큰들의 리스트 (token 옆에 lexeme을 함께 출력할 것)
-- ![output_example1](output_example1.jpg)
+
+![output_example1](output_example1.jpg)
+
 - 2. 심볼테이블 및 스트링 테이블
-- ![output_example2](output_example2.jpg)
+
+![output_example2](output_example2.jpg)
