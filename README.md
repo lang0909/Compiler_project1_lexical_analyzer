@@ -22,29 +22,49 @@ gcc lex.yy.c -lf -lfl
 ## 기능 설명
 ### TOKEN 종류
   
-  1.Keywords
-    -int double str if while return
-  2.Identifiers (ID)
-    - 영문자 대소문자, 숫자, underscore(_)로만 이루어짐
-    - 첫 글자는 반드시 대소문자, _만 가능
-    - ‘_’문자만으로 이루어질 수는 없음
-    - 길이는 제한이 없으나 실제 구분은 첫 16자로 함
-  3.INTEGER
-    - 기본적으로 C 언어의 int 표기법을 따름 (십진수만 사용)
-    - 자리 수는 제한 없으나 값을 저장 시 최대 10자리만 저장(11자리 이상은 상위부분 절단)
-  4.DOUBLE
-    - C 언어의 double constant 표기법을 따름
-  5.STRING
-    - 기본적으로 C 언어의 표기법을 따름
-  6.Operators
-    - +  -  *  /  
-    - =
-    - > >= < <= == !=
-  7.기타 특수 문자들
-    - "  ,  (  ) ; { }
+1.Keywords
+  
+-  int double str if while return
+    
+2.Identifiers (ID)
+
+- 영문자 대소문자, 숫자, underscore(_)로만 이루어짐
+
+- 첫 글자는 반드시 대소문자, _만 가능
+
+- ‘_’문자만으로 이루어질 수는 없음
+
+- 길이는 제한이 없으나 실제 구분은 첫 16자로 함
+  
+3.INTEGER
+
+- 기본적으로 C 언어의 int 표기법을 따름 (십진수만 사용)
+
+- 자리 수는 제한 없으나 값을 저장 시 최대 10자리만 저장(11자리 이상은 상위부분 절단)
+
+4.DOUBLE
+    
+- C 언어의 double constant 표기법을 따름
+  
+5.STRING
+    
+- 기본적으로 C 언어의 표기법을 따름
+  
+6.Operators
+
+- +  -  *  /  
+
+- =
+
+- > >= < <= == !=
+ 
+7.기타 특수 문자들
+
+- "  ,  (  ) ; { }
      
-  8.Comments
-    - C언어의 주석을 따른다 ( /* */ 와 // )
+8.Comments
+
+- C언어의 주석을 따른다 ( /* */ 와 // )
 
 
 
@@ -84,7 +104,7 @@ int sum ; sum print ( ;
 	
 	<COMMA, >	 	,
 	
-      ...
+    ...
       
 	<PRINT, >		print
 	
