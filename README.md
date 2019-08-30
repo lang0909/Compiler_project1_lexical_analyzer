@@ -9,7 +9,7 @@
 - flex 2.6.4
 
 ## 사용 시 주의사항
-### lex file을 flex를 이용하여 c 파일을 생성후 gcc로 컴파일 후 생성 된 object 파일을 이용하여 사용
+#### lex file을 flex를 이용하여 c 파일을 생성후 gcc로 컴파일 후 생성 된 object 파일을 이용하여 사용
 
 ```bash
 flex hw1.l
@@ -18,8 +18,14 @@ gcc lex.yy.c -ly -lfl
 ./a.out ex2.txt
 ```
 
+#### flex가 설치되어 있지 않을 때 설치 및 버전확인 방법
+```bash
+sudo apt-get install flex -y
+flex --version
+```
 
-#### 기능 설명
+
+## 기능 설명
 ### TOKEN 종류
   
 1.Keywords
